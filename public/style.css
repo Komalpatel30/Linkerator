@@ -1,0 +1,95 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+@import url("https://fonts.googleapis.com/css?family=Parisienne|Roboto|Playfair+Display|Roboto+Condensed&display=swap");
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 75%;
+  background-color: #e1bee7;
+}
+
+#app {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ba68c8;
+  height: 40px;
+}
+
+.welcomeMessage {
+  font-size: 50px;
+}
+
+.logout {
+  margin-top: 2px;
+  height: 90%;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.4);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#loading .message {
+  min-width: 480px;
+  padding: 3rem;
+
+  box-shadow: 0 2px 8px black;
+  background: white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+
+  background: linear-gradient(to bottom, #ba68c8 5%, #ba68c8 100%);
+  background-color: #ba68c8;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ba68c8;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ba68c8 5%, #ba68c8 100%);
+  background-color: #ba68c8;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
